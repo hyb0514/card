@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微名片</title>
+    <style>
+        body{
+            margin: 0;
+            height: 80vh;
+            background-color: rgb(253, 253, 253);
+        }
+        /*{
+            border: 1px solid black;
+        }*/
+        .flex{
+            display: flex;
+        }
+        .menu{
+            background-color: rgb(198, 218, 238);
+
+        }
+        .flex1{
+            flex: 1;
+        }
+        .column{
+            flex-direction: column;
+            background-color: rgb(225, 237, 248);
+        }
+        .margin{
+            margin: 5px;
+        }
+        .margin-right{
+            margin-right: 5px;
+        }
+        .shadow{
+            box-shadow: 3px 3px 3px #969595;
+        }
+        /*.navigation1{
+            padding: 20px 25px;
+            border-bottom: 1px solid #3195f8;
+            font-size: 15px;
+            color: #0774bd;
+        }*/
+        .navigation2{
+            padding: 20px 25px;
+            font-size: 15px;
+            color: #0774bd;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 1px;
+            background-color: #0774bd;
+        }
+        li a {
+            display: block;
+            color: #0774bd;
+            padding: 20px 25px;
+            text-decoration: none;
+        }
+        ul a:hover {
+            background-color: #034672;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body class="flex">
+    <!--导航栏-->
+    <ul style="width:25vh" class="menu margin shadow">
+        <li><a href="../html/CSS.html">首页</a></li>
+        <li><a href="../html/CSS.html">个人名片</a></li>
+        <li><a href="../html/CSS.html">企业名片</a></li>
+        <li><a href="../html/CSS.html">管理员&渠道</a></li>
+        <li><a href="../html/CSS.html">图表管理</a></li>
+        <li><a href="../html/CSS.html">佣金与订单</a></li>
+        <li><a href="../html/CSS.html">系统设置</a></li>
+        <li><a href="../html/CSS.html">基本资料</a></li>
+    
+    </ul>
+    <!--主区域-->
+    <div class="flex1 flex column">
+        <!--头部导航-->
+        <div style="height: 200px; border-bottom: 1px solid #3195f8" class="flex margin menu shadow ">
+            <div class="navigation2">首页</div>
+        </div>
+        <!--数据栏-->
+        <div style="height: 100px;" class="flex margin">
+            <div style="height: 80px;" class="flex1 margin-right menu shadow"></div>
+            <div style="height: 80px;" class="flex1 margin-right menu shadow"></div>
+            <div style="height: 80px;" class="flex1 margin-right menu shadow"></div>
+            <div style="height: 80px;" class="flex1 margin-right menu shadow"></div>
+        </div>
+        <!--报表栏-->
+        <div style="height: 100vh;" class="menu margin shadow"></div>
+        <div style="height: 100vh;" class="menu margin shadow"></div>
+        <div></div>
+    </div>
+    
+</body>
+</html>
